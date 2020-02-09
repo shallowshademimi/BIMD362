@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import Game from './Game';
 import './App.css';
 
+//App-Top level component implemented as React function component.
+
 function App() {
+    //This is called a function component, it only returns a block of html,
+    // so try replacing /*HTML STUFF*/ with <h1>Hello World<h1/>, and it should show up on your browser, nice.
+    //renders this component
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        //you want App.js to run Game.js, so to run a component
+        // So in order to have your App.js to run Game.js, you do
+      <Game />
     </div>
   );
 }
 
 export default App;
+//also can add it before function.
