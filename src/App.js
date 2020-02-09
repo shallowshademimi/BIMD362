@@ -9,9 +9,9 @@ function App() {
     // so try replacing /*HTML STUFF*/ with <h1>Hello World<h1/>, and it should show up on your browser, nice.
     //renders this component
   return (
+    // you want App.js to run Game.js, so to run a component
+    // So in order to have your App.js to run Game.js, you do
     <div className="App">
-        //you want App.js to run Game.js, so to run a component
-        // So in order to have your App.js to run Game.js, you do
       <Game />
     </div>
   );

@@ -35,11 +35,11 @@ class GameCell extends React.Component{
     }
 
     render() {
+        // onClick detects if the div tag has been clicked, and when it’s clicked,
+        // it will run the function “handleClick”
         return(
             <div className="game-cell"
                  onClick={this.handleClick}>
-                //onClick detects if the div tag has been clicked, and when it’s clicked,
-                //it will run the function “handleClick”
                 {this.state.content}
             </div>
         );
